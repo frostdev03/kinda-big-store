@@ -22,23 +22,23 @@ export default function Inventory() {
 
   return (
     <Layout>
-      <h2 className="text-xl font-bold mb-4">Inventory</h2>
+      <h2 className="text-xl font-bold mb-4 text-[#1C352D]">Inventory</h2>
       <div className="p-4">
         {/* <h1 className="text-xl font-bold mb-4">Inventory</h1> */}
         <div className="flex gap-2 mb-4">
           <input
             placeholder="Nama"
-            className="border px-2 py-1"
+            className="border px-2 py-1 text-[#1C352D]"
             onChange={(e) => setForm({ ...form, name: e.target.value })}
           />
           <input
             placeholder="Harga"
-            className="border px-2 py-1"
+            className="border px-2 py-1 text-[#1C352D]"
             onChange={(e) => setForm({ ...form, price: e.target.value })}
           />
           <input
             placeholder="Stok"
-            className="border px-2 py-1"
+            className="border px-2 py-1 text-[#1C352D]"
             onChange={(e) => setForm({ ...form, stock: e.target.value })}
           />
           <button

@@ -79,11 +79,11 @@ export default function Cashier() {
 
   return (
     <Layout>
-      <h2 className="text-xl font-bold mb-4">Cashier</h2>
+      <h2 className="text-2xl font-bold mb-4 text-[#1C352D]">Cashier</h2>
       <div className="p-4">
         {/* <h1 className="text-xl font-bold mb-4">Cashier</h1> */}
 
-        <div className="flex gap-2 mb-4">
+        <div className="flex gap-2 mb-4 text-[#1C352D]">
           <select
             className="border px-2 py-1"
             onChange={(e) => setSelectedProductId(Number(e.target.value))}
@@ -106,19 +106,19 @@ export default function Cashier() {
 
           <button
             onClick={addToCart}
-            className="bg-green-500 text-white px-3 py-1 rounded"
+            className="bg-[#F5C9B0] text-[#1C352D] font-semibold px-3 py-1 rounded"
           >
             Tambah
           </button>
         </div>
 
-        <table className="w-full border mb-4">
+        <table className="w-full border-[#1C352D] mb-4 text-[#1C352D]">
           <thead>
-            <tr className="bg-gray-100">
-              <th className="border px-2">Produk</th>
-              <th className="border px-2">Qty</th>
-              <th className="border px-2">Harga</th>
-              <th className="border px-2">Subtotal</th>
+            <tr className="bg-[#F5C9B0] text-[#1C352D]">
+              <th className="border px-4">Produk</th>
+              <th className="border px-4">Qty</th>
+              <th className="border px-4">Harga</th>
+              <th className="border px-4">Subtotal</th>
             </tr>
           </thead>
           <tbody>
@@ -136,11 +136,13 @@ export default function Cashier() {
         </table>
 
         <div className="flex justify-between items-center">
-          <h2 className="text-lg font-semibold">Total: Rp{total}</h2>
+          <h2 className="text-lg font-semibold text-[#1C352D]">
+            Total: Rp{total}
+          </h2>
           <button
             onClick={saveTransactions}
             disabled={cart.length === 0}
-            className="bg-blue-600 text-white px-4 py-2 rounded disabled:bg-gray-400"
+            className="bg-[#F5C9B0] text-[#1C352D] font-bold px-4 py-2 rounded disabled:bg-gray-400"
           >
             Simpan Transaksi
           </button>
