@@ -17,11 +17,11 @@ export default function Reports() {
 
   return (
     <Layout>
-      <h2 className="text-xl font-bold mb-4">Report</h2>
+      <h2 className="text-2xl font-bold mb-4 text-[#1C352D]">Report</h2>
       <div className="p-4">
         {/* <h1 className="text-xl font-bold mb-4">Laporan Penjualan</h1> */}
 
-        <div className="mb-6">
+        <div className="mb-6 text-[#1C352D]">
           <h2 className="text-lg font-semibold">Hari ini</h2>
           {daily && (
             <>
@@ -37,11 +37,11 @@ export default function Reports() {
           )}
         </div>
 
-        <div>
+        <div className="text-[#1C352D]">
           <h2 className="text-lg font-semibold">Bulan ini</h2>
           {monthly && (
             <>
-              <p>Total: Rp{monthly.total}</p>
+              -<p>Total: Rp{monthly.total}</p>
               <ul className="list-disc pl-5">
                 {monthly.transactions.map((t: any) => (
                   <li key={t.id}>

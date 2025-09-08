@@ -22,7 +22,7 @@ export default function Inventory() {
 
   return (
     <Layout>
-      <h2 className="text-xl font-bold mb-4 text-[#1C352D]">Inventory</h2>
+      <h2 className="text-2xl font-bold mb-4 text-[#1C352D]">Inventory</h2>
       <div className="p-4">
         {/* <h1 className="text-xl font-bold mb-4">Inventory</h1> */}
         <div className="flex gap-2 mb-4">
@@ -43,15 +43,15 @@ export default function Inventory() {
           />
           <button
             onClick={addProduct}
-            className="bg-blue-500 text-white px-3 py-1 rounded"
+            className="bg-[#F5C9B0] text-[#1C352D] font-semibold px-3 py-1 rounded"
           >
             Tambah
           </button>
         </div>
 
-        <table className="w-full border">
+        <table className="w-full border-[#1C352D] mb-4 text-[#1C352D]">
           <thead>
-            <tr className="bg-gray-100">
+            <tr className="bg-[#F5C9B0] text-[#1C352D]">
               <th className="border px-2">ID</th>
               <th className="border px-2">Nama</th>
               <th className="border px-2">Harga</th>
